@@ -33,6 +33,19 @@ string = string.replaceAll("o", "*");
 string = string.replaceAll("O", "*");
 console.log(string);
 
+{
+  const rand1 = rand(0, 2);
+  const rand2 = rand(0, 2);
+  const rand3 = rand(0, 2);
+  const rand4 = rand(0, 2);
+
+  const string = `${rand1}${rand2}${rand3}${rand4}`.toString();
+
+  const count = (num) => string.split(num).length - 1;
+
+  console.log(string, `0: ${count(0)}, 1: ${count(1)}, 2: ${count(2)}`);
+}
+
 // let numberOne = Math.random();
 // let numberTwo = Math.random();
 // let numberThree = Math.random();
@@ -71,15 +84,12 @@ if (number5 > number6) {
 }
 
 let first = rand(0, 25);
-
 console.log(first);
 
 let second = rand(0, 25);
-
 console.log(second);
 
 let third = rand(0, 25);
-
 console.log(third);
 
 if (Math.min(first, second, third) < first < Math.max(first, second, third)) {
@@ -97,3 +107,23 @@ if (Math.min(first, second, third) < first < Math.max(first, second, third)) {
 ) {
   console.log(third);
 }
+
+let naujasAktoriausVardas = "Richard";
+let naujaAktoriausPavarde = "Ghere";
+
+let naujasStringas = naujasAktoriausVardas[0] + naujaAktoriausPavarde[0];
+console.log(naujasStringas);
+
+// Parašyti kodą, kuris generuotų atsitiktinį
+// stringą iš lotyniškų mažųjų raidžių.Stringo ilgis 3 simboliai.
+
+// let letters = rand(a, z);
+// console.log(letters);
+
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let positionOne = rand(0, alphabet.length - 1);
+let positionTwo = rand(0, alphabet.length - 1);
+let positionThree = rand(0, alphabet.length - 1);
+console.log(
+  alphabet[positionOne] + alphabet[positionTwo] + alphabet[positionThree]
+);
