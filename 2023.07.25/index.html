@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNamų darbai 07/25</title>
+  </head>
+  <body>
+    <script>
+      function rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      function getRandomLetter() {
+        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        return alphabet[Math.floor(Math.random() * alphabet.length)];
+      }
+
+      // 1st task
+      // Sugeneruokite masyvą iš 10 elementų, kurio elementai
+      // būtų masyvai iš 5 elementų su reikšmėmis nuo 5 iki 25.
+
+      const arrayGrand = [];
+
+      for (let i = 0; i < 10; i++) {
+        arrayGrand[i] = [];
+        for (let x = 0; x < 5; x++) {
+          arrayGrand[i][x] = rand(5, 25);
+        }
+      }
+      console.log(arrayGrand);
+
+      //   1st a
+      // Naudodamiesi 1 uždavinio masyvu:
+      // Suskaičiuokite kiek masyve yra elementų didesnių už 10;
+
+      let counter = 0;
+
+      for (const child of arrayGrand) {
+        for (const value of child) {
+          if (value > 10) counter++;
+        }
+      }
+
+      console.log("Values bigger than 10: ", counter);
+      // 1st b
+      // Raskite didžiausio elemento reikšmę;
+
+      let max = 0;
+
+      for (const child of arrayGrand) {
+        for (const value of child) {
+          if (value > max) max = value;
+        }
+      }
+
+      console.log("Biggest value over elements is:", max);
+
+      // 1st c
+      // Suskaičiuokite kiekvieno antro lygio masyvų su vienodais
+      // indeksais sumas (t.y. suma reikšmių turinčių indeksą 0, 1 ir t.t.)
+
+      // 1st d
+      // Visus antro lygio masyvus “pailginkite” iki 7 elementų
+
+      // 2nd task
+      // Sukurkite masyvą iš 10 elementų. Kiekvienas masyvo elementas
+      // turi būti masyvas su atsitiktiniu kiekiu nuo 2 iki 20 elementų.
+      // Elementų reikšmės atsitiktinai parinktos raidės iš intervalo A-Z.
+
+      function generateRandomArray() {
+        const arrayLength = Math.floor(Math.random() * 19) + 2;
+        const randomArray = [];
+
+        for (let i = 0; i < arrayLength; i++) {
+          randomArray.push(getRandomLetter());
+        }
+
+        return randomArray;
+      }
+
+      const newArrayGrand = [];
+
+      for (let i = 0; i < 10; i++) {
+        newArrayGrand.push(generateRandomArray());
+      }
+
+      console.log(newArrayGrand);
+
+      // 3rd task
+      // Išrūšiuokite antro lygio masyvus pagal abėcėlę (t.y. tuos kur su raidėm).
+
+      newArrayGrand.forEach((secondLevelArray) => {
+        secondLevelArray.sort();
+      });
+
+      // Išrūšiuokite trečio uždavinio pirmo lygio masyvą taip, kad
+      // elementai kurių masyvai trumpiausi eitų pradžioje.
+      // Masyvai kurie turi bent vieną “K” raidę,
+      // visada būtų didžiojo masyvo visai pradžioje.
+    </script>
+  </body>
+</html>

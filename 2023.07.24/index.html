@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let animals = [];
+
+      const object1 = {
+        bread: "Šikšnosparnis",
+        age: 14,
+        flying: true,
+        name: "Arūnas Šikšna",
+        color: "pilkas",
+      };
+
+      const object2 = {
+        bread: "Katinas",
+        age: 10,
+        flying: false,
+        name: "Kukulis",
+        color: "pilkas",
+      };
+
+      const object3 = {
+        bread: "Paukštis",
+        age: 14,
+        flying: true,
+        name: "Angry bird",
+        color: "mėlynas",
+      };
+
+      const object4 = {
+        bread: "Slibinas",
+        age: 14,
+        flying: true,
+        name: "Auksinis kardas",
+        color: "žalias",
+      };
+
+      const object5 = {
+        bread: "Šuo",
+        age: 5,
+        flying: false,
+        name: "Edis",
+        color: "rudas",
+      };
+
+      animals.push(object1);
+      animals.push(object2);
+      animals.push(object3);
+      animals.push(object4);
+      animals.push(object5);
+
+      console.log(animals);
+
+      function animalDescription(value) {
+        console.log(
+          `Sveiki, aš esu ${value.bread}, man yra ${value.age} metų ir aš esu ${value.name}`
+        );
+      }
+
+      animalDescription(object1);
+      animalDescription(object2);
+      animalDescription(object3);
+      animalDescription(object4);
+      animalDescription(object5);
+    </script>
+  </body>
+
+  <!-- //     1. Sukurkite 5 skirtingus objektus su šiais laukų pavadinimais:
+
+// gyvunoPavadinimas, amzius, arGaliSkristi, vardas, spalva.
+// Jiems sugalvokite ir priskirkite savybiu reikšmes. Ir juos sudėkite į masyvą.
+
+
+// 2. Sukurkite funkciją, kuri gražina gyvūno aprašymą:
+// tarkime turime gyvūną:
+// Šikšnosparnis, 14, true, Arūnas Šikšna, Pilkas
+
+// Funkcija gražina: 
+// "Sveiki, aš Arūnas Šikšna, man yra 14 metų ir aš esu Šikšnosparnis, mano odos spalva: Pilkas ir aš galiu skristi!"
+// ir rezultatą išveskite su console.log į ekraną.
+
+// 3. Sukurkite du atskirus masyvus kuriuose išskirstysime skraidančius ir neskraidančius gyvūnus. Tada padarome kovą ir laimės tie gyvūnai, kurių buvo daugiau.
+
+// pvz: skraidančių gyvūnų masyve yra 3 elementai o neskraidančių gyvūnų masyve yra 2 elementai, todėl skraidantys gyvūnai laimi. Rezultatą išvesti su console.log
+
+
+// 4. Sukurkite registracijos formą html'e kuris registruotų vartotojų:
+// Vardą, pavardę, username, el.paštą, slaptažodį.
+
+// Paspaudus mygtuką register į žmonių masyvą turėtų užsiregistruoti naujas varotojas. Masyvą išveskite į lentelę po forma.
+// (Rekomenduoju šiek tiek stilizuoti, kad prisimintumėte css bei html sintaksę)
+
+// 5. Validuokite, ar el. pašto savybėje yra panaudotas @ ir top level domain simboliai ant galo: Tai pvz example@example.com yra tinkamas el paštas, kol justinas@justinas yra netinkamas el pašto adresas, šiuos vartotojus sudėkite į validUsers masyvą.
+
+// 6. Į atskirą lentelę išveskite vartotojus iš validUsers masyvo, turinčius ilgesnį el.paštą nei 20 simbolių. -->
+</html>
