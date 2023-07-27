@@ -62,6 +62,20 @@
       // Suskaičiuokite kiekvieno antro lygio masyvų su vienodais
       // indeksais sumas (t.y. suma reikšmių turinčių indeksą 0, 1 ir t.t.)
 
+      const sums = [];
+
+      for (let i = 0; i < 5; i++) {
+        let sumValue = 0;
+
+        for (const value of array) {
+          sumValue += value[i];
+        }
+
+        sums.push(sumValue);
+      }
+
+      document.write(`<p>Sumos pagal indeksus: ${sums.join(", ")}</p>`);
+
       // 1st d
       // Visus antro lygio masyvus “pailginkite” iki 7 elementų
 

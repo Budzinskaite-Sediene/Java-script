@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judantis Edis</title>
+  </head>
+  <style>
+    #dog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.2s;
+    }
+
+    img {
+      max-width: 80px;
+    }
+  </style>
+  <body>
+    <img src="edis.png" alt="Mano šuo" />
+    <script>
+      let dog = document.querySelector("#dog");
+      let x = 0;
+      let y = 0;
+      let speed = 10;
+      let windowWidth = window.innerWidth;
+      let windowHeihgt = window.innerHeight;
+
+      document.addEventListener('keydown', (e) =>{
+        if (e.keyCode === 37) {
+            if (x > 0){
+                x -= speed;
+
+            }
+      }
+    </script>
+  </body>
+</html>
