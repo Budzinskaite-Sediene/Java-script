@@ -1,0 +1,23 @@
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+header h1 {
+  color: white;
+}
+
+img {
+  max-width: 20%;
+}
+
+ul li {
+  color: white;
+  list-style-type: none;
+  display: block;
+}
+
+.menu {
+  width: 800px;
+}
