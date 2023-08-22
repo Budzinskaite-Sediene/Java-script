@@ -1,6 +1,4 @@
 import HeroText from "./heroText";
-import "./Hero/css";
-
 function Hero() {
   return (
     <div id="welcome" className="pb-56 border-b-4 border-gray-600">
