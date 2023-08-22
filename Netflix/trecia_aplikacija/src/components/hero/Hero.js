@@ -1,14 +1,13 @@
-import TopTab from "./topTab";
 import HeroText from "./heroText";
+import "./Hero/css";
 
-function WelcomeSection() {
+function Hero() {
   return (
     <div id="welcome" className="pb-56 border-b-4 border-gray-600">
       <div className="container mx-auto">
-        <TopTab />
-        <WelcomeText />
+        <HeroText />
       </div>
     </div>
   );
 }
-export default WelcomeSection;
+export default Hero;

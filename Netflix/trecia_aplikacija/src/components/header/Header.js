@@ -1,5 +1,5 @@
 import logo from "./Netflix-Symbol.png";
-
+import "./Header.css";
 const Header = () => {
   return (
     <div className="header container d-flex justify-content-between align-items-center py-3">
