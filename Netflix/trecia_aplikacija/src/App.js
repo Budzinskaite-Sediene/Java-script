@@ -1,8 +1,8 @@
 import "./App.css";
 import HeroBanner from "./components/heroBanner/HeroBanner";
-// import SectionOne from "./components/sectionOne/SectionOne";
-// import SectionTwo from "./components/section2/SectionTwo";
-// import SectionThree from "./components/section3/SectionThree";
+import SectionOne from "./components/sectionOne/SectionOne";
+import SectionTwo from "./components/sectionTwo/SectionTwo";
+import SectionThree from "./components/sectionThree/SectionThree";
 // import SectionKids from "./components/sectionKids/SectionKids";
 // import Tabs from "./components/tabs/Tabs";
 import Footer from "./components/footer/Footer";
@@ -12,11 +12,11 @@ function App() {
     <>
       <div className="app">
         <HeroBanner />
-        {/* <SectionTwo />
+        <SectionTwo />
         <SectionThree />
-        <SectionKids />
+        {/* <SectionKids />
         <Tabs /> */}
-        {/* <SectionOne /> */}
+        <SectionOne />
         <Footer />
       </div>
     </>

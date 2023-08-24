@@ -40,3 +40,7 @@
 .containerInput {
   display: flex;
 }
+
+body {
+  background-color: black;
+}

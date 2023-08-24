@@ -1,0 +1,13 @@
+.containerTwo {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid grey;
+}
+
+.containerFirstSection {
+  align-items: center;
+}
+
+.enjoyP {
+  color: white;
+}
