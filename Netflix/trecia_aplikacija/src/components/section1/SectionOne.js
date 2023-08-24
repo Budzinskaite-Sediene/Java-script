@@ -1,21 +1,17 @@
-import TvImage from "./TvImage";
-import Text1 from "./Text1";
-import "./SectionOne.css";
+import "./section1/SectionOne.css";
+import Input from "./input/Input";
 
-function SectionOne() {
+const SectionOne = () => {
   return (
-    <>
-      <div className="border-b-4 border-gray-700">
-        <div className="py-20 container mx-auto pl-20 flex gap-4 containerInput">
-          <Text1
-            heading="Enjoy on your TV"
-            text="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-          />
-          <TvImage />
-        </div>
-      </div>
-    </>
+    <section className="container section1">
+      <h2>Unlimited movies, TV shows, and more</h2>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <p>
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <Input placeholder="Email address" />
+    </section>
   );
-}
+};
 
 export default SectionOne;

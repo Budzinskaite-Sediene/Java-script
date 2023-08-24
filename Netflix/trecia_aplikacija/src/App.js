@@ -15,10 +15,10 @@ function App() {
         <Header />
         <Hero />
         <SectionOne />
-        <SectionTwo />
+        {/* <SectionTwo />
         <SectionThree />
         <SectionKids />
-        <Tabs />
+        <Tabs /> */}
         <Footer />
       </div>
     </>
