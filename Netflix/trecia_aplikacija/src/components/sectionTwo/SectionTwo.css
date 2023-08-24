@@ -1,11 +1,16 @@
 .containerTwo {
   display: flex;
   flex-direction: row;
-  border-bottom: 3px solid grey;
+  justify-content: center;
+  border-bottom: 5px solid rgb(31, 29, 29);
 }
 
 .containerFirstSection {
-  align-items: center;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
 }
 
 .enjoyP {

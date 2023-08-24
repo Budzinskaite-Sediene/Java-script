@@ -7,7 +7,7 @@ const SectionThree = () => {
         <div>
           <img src={image} alt="image" />
         </div>
-        <div className="containerFirstSection">
+        <div className="containerSecondSection">
           <h1 className="firstTitle"> Download your shows to watch offline</h1>
           <p className="enjoyP">
             Save your favorites easily and always have something to watch.
